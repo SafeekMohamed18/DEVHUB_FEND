@@ -8,7 +8,7 @@ import { EmailRequest, enquiry } from './Modal';
 })
 export class EnquiryService {
 
-  private enquiryBaseURL = 'https://localhost:7055/api/ContactUs'; 
+  private enquiryBaseURL = 'http://localhost:5136/api/ContactUs';
   
 
   constructor(private http: HttpClient) { }
@@ -23,7 +23,7 @@ export class EnquiryService {
       responseType: 'text'
     })
   }
-  // https://localhost:7055/api/ContactUs/a9cb4ee4-1b3c-49ef-a96c-6e8b2dee545a
+  // http://localhost:5136/api/ContactUs/a9cb4ee4-1b3c-49ef-a96c-6e8b2dee545a
   deleteEnquiry(id:string){
     return this.http.delete(`${this.enquiryBaseURL}/${id}`,
       {responseType:'text'}

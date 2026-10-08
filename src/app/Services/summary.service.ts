@@ -7,7 +7,7 @@ import { EnrollmentSummaryResponseDto, RevenueSummaryResponseDto, SummaryRespons
 })
 export class SummaryService {
   
-  private BaseSummaryURL: string = 'https://localhost:7055/api/Summery/'
+  private BaseSummaryURL: string = 'http://localhost:5136/api/Summery/'
 
   constructor(private http: HttpClient) { }
 

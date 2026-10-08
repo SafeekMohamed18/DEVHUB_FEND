@@ -9,7 +9,7 @@ import { BehaviorSubject, Observable, catchError, throwError } from 'rxjs';
 export class CourseService {
 
 
-  private courseApi = 'https://localhost:7055/api/Course';
+  private courseApi = 'http://localhost:5136/api/Course';
 
   private coursesSubject = new BehaviorSubject<Course[]>([]);
   public courses$ = this.coursesSubject.asObservable();

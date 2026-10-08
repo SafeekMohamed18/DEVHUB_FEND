@@ -24,7 +24,7 @@ export class ProfileUpdateFormComponent {
     if (this.nic) {
       this.studentService.getStudentByNIC(this.nic).subscribe(
         (response: any) => {
-          this.studentImagePreviewUrl = 'https://localhost:7055'+response.imagePath; 
+          this.studentImagePreviewUrl = 'http://localhost:5136'+response.imagePath;
         },
         (error) => {
           console.error('Error loading current image:', error);

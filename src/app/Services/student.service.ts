@@ -9,8 +9,8 @@ import { SocialMediaLinks, Student, StudentProfileDto, StudentUpdateRequestDto, 
 export class StudentService {
 
 
-  private BaseStudentURL = 'https://localhost:7055/api/Students';
-  private SocialMediaLinkURL='https://localhost:7055/api/SocialMediaLinks'
+  private BaseStudentURL = 'http://localhost:5136/api/Students';
+  private SocialMediaLinkURL='http://localhost:5136/api/SocialMediaLinks'
 
   private studentsSubject = new BehaviorSubject<Student[]>([]);
   public students$ = this.studentsSubject.asObservable();
@@ -93,7 +93,7 @@ export class StudentService {
   }
 
   resetPassword(nic: string, passwordRequest: resetPassword) {
-    https://localhost:7055/api/Students/123456789v/update-password
+    http://localhost:5136/api/Students/123456789v/update-password
     return this.http.put(`${this.BaseStudentURL}/${nic}/update-password`, passwordRequest)
   }
 
@@ -106,7 +106,7 @@ export class StudentService {
   }
 
   updatestudentDetails(nic: string,request:StudentUpdateRequestDto){
-    https://localhost:7055/api/Students/update/
+    http://localhost:5136/api/Students/update/
     return this.http.put(`${this.BaseStudentURL}/update/${nic}`,request)
   }
 

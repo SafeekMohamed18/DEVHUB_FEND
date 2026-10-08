@@ -18,7 +18,7 @@ export class StudentListComponent implements OnInit {
 
   students: Student[] = [];
   searchText: string = '';
-  baseUrl = 'https://localhost:7055'; 
+  baseUrl = 'http://localhost:5136';
 
   constructor(
     private studentService: StudentService,

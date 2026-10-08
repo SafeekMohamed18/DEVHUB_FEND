@@ -8,7 +8,7 @@ import { admin } from './Modal';
 })
 export class AdminService {
 
-  private adminBaseURL = 'https://localhost:7055/api/Admin';
+  private adminBaseURL = 'http://localhost:5136/api/Admin';
   // private adminBaseURL = 'https://svts85hv-7055.asse.devtunnels.ms/api/Admin';
 
 

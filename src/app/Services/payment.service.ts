@@ -9,8 +9,8 @@ import { Payment } from './Modal';
 export class PaymentService {
 
 
-  private paymentUrl = 'https://localhost:7055/api/Payment';
-  private totalIncomeUrl = 'https://localhost:7055/api/Payment/total-income';
+  private paymentUrl = 'http://localhost:5136/api/Payment';
+  private totalIncomeUrl = 'http://localhost:5136/api/Payment/total-income';
 
   constructor(private http: HttpClient) {}
 

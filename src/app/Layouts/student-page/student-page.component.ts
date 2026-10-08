@@ -10,7 +10,7 @@ import { Student } from '../../Services/Modal';
   styleUrl: './student-page.component.css'
 })
 export class StudentPageComponent implements OnInit {
-  baseUrl: string = 'https://localhost:7055';
+  baseUrl: string = 'http://localhost:5136';
   activeTab: string = 'home';
   nic:string=''
   student: Student | undefined;

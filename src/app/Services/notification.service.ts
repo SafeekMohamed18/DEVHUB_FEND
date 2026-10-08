@@ -6,8 +6,8 @@ import { AdminMessageRequest, Message, MessageRequest } from './Modal';
   providedIn: 'root'
 })
 export class NotificationService {
-  baseURL:string= 'https://localhost:7055/api/Notification';
-  studenMessageURL:string = 'https://localhost:7055/api/StudentMessage'
+  baseURL:string= 'http://localhost:5136/api/Notification';
+  studenMessageURL:string = 'http://localhost:5136/api/StudentMessage'
 
   constructor(private http: HttpClient) { }
 

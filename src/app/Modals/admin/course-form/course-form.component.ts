@@ -46,7 +46,7 @@ export class CourseFormComponent implements OnInit {
     if (this.courseToEdit) {
       this.courseForm.patchValue(this.courseToEdit);
       if (this.courseToEdit.imagePaths) {
-        this.courseImagePreviewUrl = 'https://localhost:7055'+this.courseToEdit.imagePaths;
+        this.courseImagePreviewUrl = 'http://localhost:5136'+this.courseToEdit.imagePaths;
       }
     }
   }

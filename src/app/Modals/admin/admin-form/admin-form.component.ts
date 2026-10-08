@@ -65,7 +65,7 @@ export class AdminFormComponent {
     if (this.adminToEdit) {
       this.adminForm.patchValue(this.adminToEdit);
       if (this.adminToEdit.imagePath) {
-        this.adminImagePreviewUrl = 'https://localhost:7055'+this.adminToEdit.imagePath;
+        this.adminImagePreviewUrl = 'http://localhost:5136'+this.adminToEdit.imagePath;
       }
     }
   }

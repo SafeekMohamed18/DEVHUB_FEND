@@ -13,7 +13,7 @@ export class AdminPageComponent {
   isSidebarVisible = false; // Default is sidebar hidden on small screens
   isDarkMode = false; // Default to light mode
   admin:admin | null= null;
-  baseUrl: string = 'https://localhost:7055';
+  baseUrl: string = 'http://localhost:5136';
   userRole:string = ''
   
 

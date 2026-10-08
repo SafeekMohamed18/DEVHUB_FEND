@@ -12,7 +12,7 @@ import { AdminFormComponent } from '../../../Modals/admin/admin-form/admin-form.
 export class AdminListComponent {
   searchText: string = '';
   admins: admin[] = [];
-  baseUrl = 'https://localhost:7055'; 
+  baseUrl = 'http://localhost:5136';
 
   constructor(private adminService: AdminService,private modalService: NgbModal) {}
 

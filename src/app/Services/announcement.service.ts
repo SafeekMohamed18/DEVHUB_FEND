@@ -8,7 +8,7 @@ import { BehaviorSubject, Observable, catchError, throwError } from 'rxjs';
 })
 export class AnnouncementService {
 
-  baseURL: string = 'https://localhost:7055/api/Announcement';
+  baseURL: string = 'http://localhost:5136/api/Announcement';
   private announcementSubject = new BehaviorSubject<Announcement[]>([]);
   public announcement$ = this.announcementSubject.asObservable();
 

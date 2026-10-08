@@ -7,7 +7,7 @@ import { Enrollment, EnrollmentRequest, Student } from './Modal';
   providedIn: 'root',
 })
 export class EnrollmentService {
-  private enrollmentUrl = 'https://localhost:7055/api/Enrollment';
+  private enrollmentUrl = 'http://localhost:5136/api/Enrollment';
 
   constructor(private http: HttpClient) {}
 
